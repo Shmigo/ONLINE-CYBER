@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber Services: typing, printing, eCitizen and design, delivered</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f8fb;--card:#fff;--ink:#14202e;--mut:#566779;--line:#d8e1ea;--c:#0099bd;--m:#d6006f;--y:#ffc20e;--btn:#006f8c;--btnt:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e151d;--card:#16212c;--ink:#e9f0f7;--mut:#9fb0c1;--line:#263544;--btn:#34c6e8;--btnt:#07222b}}
+:root[data-theme=dark]{--bg:#0e151d;--card:#16212c;--ink:#e9f0f7;--mut:#9fb0c1;--line:#263544;--btn:#34c6e8;--btnt:#07222b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;letter-spacing:-.02em}h2{font-size:1.9rem}h3{font-size:1.15rem}
+p{margin:0 0 1em}a{color:inherit}
+.w{max-width:1080px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.brand{font:800 1.2rem 'Bricolage Grotesque',sans-serif;text-decoration:none;margin-right:auto;display:flex;gap:8px;align-items:center}
+.dots{display:inline-flex}.dots i{width:12px;height:12px;border-radius:50%;margin-left:-4px;mix-blend-mode:multiply}
+nav{display:flex;gap:4px;overflow-x:auto}nav a{padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--mut);white-space:nowrap}
+nav a.on,nav a:hover{background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.btn{display:inline-block;border:0;border-radius:10px;padding:11px 18px;background:var(--btn);color:var(--btnt);font:600 1rem Figtree,sans-serif;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}.btn.sm{padding:7px 12px;font-size:.9rem}
+.btn:hover{filter:brightness(1.1)}:focus-visible{outline:3px solid var(--m);outline-offset:2px}
+section{padding:42px 0}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.press{display:flex;height:70px;margin:0 0 22px}.press i{flex:1;border-radius:50%;mix-blend-mode:multiply;animation:slide 1.1s ease-out both}
+@keyframes slide{from{transform:translateX(var(--x));opacity:.2}}
+@media(prefers-reduced-motion:reduce){.press i{animation:none}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.bar{border-top:7px solid;border-image:linear-gradient(90deg,var(--c) 25%,var(--m) 25% 50%,var(--y) 50% 75%,#222 75%) 1}
+label{display:block;font-weight:600;margin:12px 0 4px;font-size:.92rem}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.tot{font:800 2.2rem 'Bricolage Grotesque',sans-serif;margin:12px 0}
+.chk{display:flex;gap:8px;align-items:center;font-weight:400}.chk input{width:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.svc{cursor:pointer;transition:transform .15s,border-color .15s}.svc:hover{transform:translateY(-3px);border-color:var(--c)}
+.svc b{font-size:2rem;display:block}.svc small{color:var(--mut)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.steps div::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--y);color:#14202e;font-weight:800;margin-bottom:8px}
+.tabs{display:flex;gap:8px;margin-bottom:6px}.narrow{max-width:460px;margin:0 auto}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:640px}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.st{padding:2px 10px;border-radius:99px;font-size:.85rem;background:var(--line)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}.stats b{display:block;font:800 1.8rem 'Bricolage Grotesque',sans-serif}
+.soc{display:flex;gap:8px;flex-wrap:wrap}.soc a{padding:8px 14px;border-radius:99px;box-shadow:inset 0 0 0 1.5px var(--line);text-decoration:none}.soc a:hover{background:var(--c);color:#fff}
+.mut{color:var(--mut)}footer{padding:26px 0;border-top:1px solid var(--line);color:var(--mut);font-size:.92rem}
+#t{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:10px;opacity:0;pointer-events:none;transition:.25s;z-index:9}#t.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px){.hero{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="w"><a class="brand" href="#home"><span class="dots"><i style="background:#00b7e0"></i><i style="background:#ff2d95"></i><i style="background:#ffd400"></i></span><span data-cfg="name"></span></a>
+<nav><a href="#home">Home</a><a href="#order">Order</a><a href="#contact">Contact</a></nav><a id="acct" class="btn sm" href="#account">Log in</a></div></header>
+
+<main class="w">
+<section data-v="home"><div class="hero"><div>
+<div class="press" aria-hidden="true"><i style="background:#00b7e0;--x:90px"></i><i style="background:#ff2d95;--x:30px;margin-left:-22px"></i><i style="background:#ffd400;--x:-30px;margin-left:-22px"></i><i style="background:#222;--x:-90px;margin-left:-22px"></i></div>
+<h1>Type it, print it, file it. We deliver.</h1>
+<p class="mut" style="font-size:1.1rem;max-width:46ch">Typing, printing, eCitizen applications and graphic design handled online. Send your job, pay one clear price, and pick it up or have it brought to you.</p>
+<a class="btn" href="#order">Place an order</a> <a class="btn ghost" href="#contact">Talk to us</a></div>
+<div class="card bar"><h3>Get an instant price</h3>
+<label for="qsvc">Service</label><select id="qsvc" class="svsel"></select>
+<label for="qqty">How many? <span class="mut" id="qu"></span></label><input id="qqty" type="number" min="1" value="10">
+<label class="chk"><input id="qdel" type="checkbox"> Deliver to me (+<span data-cfg="feeTxt"></span>)</label>
+<div class="tot" id="qtot"></div><button class="btn" id="qgo" style="width:100%">Order this</button></div></div></section>
+
+<section data-v="home"><h2>What we do</h2><div class="grid" id="cards"></div></section>
+<section data-v="home"><h2>How it works</h2><div class="steps">
+<div><h3>Choose a service</h3><p class="mut">Pick what you need and see the price straight away.</p></div>
+<div><h3>Send the details</h3><p class="mut">Describe the job. We confirm by phone or WhatsApp.</p></div>
+<div><h3>Collect or get it delivered</h3><p class="mut">Track your order status from your account.</p></div></div></section>
+
+<section data-v="order" hidden><div class="narrow card bar"><h2>Place an order</h2>
+<form id="of"><label for="osvc">Service</label><select id="osvc" class="svsel"></select>
+<label for="oqty">Quantity</label><input id="oqty" type="number" min="1" value="1">
+<label for="odet">Job details</label><textarea id="odet" rows="4" required placeholder="What should we type, print or design? Mention paper size, colours, deadline."></textarea>
+<label class="chk"><input id="odel" type="checkbox"> Deliver to me (+<span data-cfg="feeTxt"></span>)</label>
+<div id="addr" hidden><label for="oadr">Delivery address</label><input id="oadr" placeholder="Building, street, area"></div>
+<div class="tot" id="otot"></div><button class="btn" style="width:100%">Submit order</button>
+<p class="mut" style="margin-top:10px;font-size:.9rem">You need an account to order, so you can track it.</p></form></div></section>
+
+<section data-v="account" hidden><div class="narrow card bar"><div class="tabs"><button class="btn sm" id="tl">Log in</button><button class="btn sm ghost" id="ts">Create account</button></div>
+<form id="lf"><label for="le">Email</label><input id="le" type="email" required><label for="lp">Password</label><input id="lp" type="password" required><br><br><button class="btn" style="width:100%">Log in</button></form>
+<form id="sf" hidden><label for="sn">Full name</label><input id="sn" required><label for="se">Email</label><input id="se" type="email" required><label for="sp">Phone</label><input id="sp" type="tel" required><label for="sw">Password (6+ characters)</label><input id="sw" type="password" minlength="6" required><br><br><button class="btn" style="width:100%">Create account</button></form></div></section>
+
+<section data-v="dash" hidden><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h2 id="hi"></h2><div><a class="btn sm" href="#order">New order</a> <button class="btn sm ghost" id="out">Log out</button></div></div><div class="tbl card" id="mine"></div></section>
+
+<section data-v="admin" hidden><h2>Admin</h2>
+<div id="gate" class="narrow card"><label for="pin">Admin PIN</label><input id="pin" type="password"><br><br><button class="btn" id="pgo">Open dashboard</button></div>
+<div id="adm" hidden><div class="stats" id="stats"></div><h3>Orders</h3><div class="tbl card" id="ords"></div><h3 style="margin-top:24px">Messages</h3><div class="card" id="msgs"></div><br><button class="btn ghost sm" id="alo">Lock admin</button></div></section>
+
+<section data-v="contact" hidden><h2>Contact us</h2><div class="hero" style="align-items:start">
+<div class="card"><h3>Reach us</h3><p><b>Phone:</b> <a id="cph" data-cfg="phone"></a></p><p><b>WhatsApp:</b> <a id="cwa">Chat now</a></p><p><b>Email:</b> <a id="cem" data-cfg="email"></a></p><p><b>Find us:</b> <span data-cfg="addr"></span></p><p><b>Hours:</b> <span data-cfg="hours"></span></p><h3>Follow us</h3><div class="soc" id="soc"></div></div>
+<form class="card bar" id="cf"><h3>Send a message</h3><label for="cn">Your name</label><input id="cn" required><label for="cc">Phone or email</label><input id="cc" required><label for="cm">Message</label><textarea id="cm" rows="4" required></textarea><br><br><button class="btn" style="width:100%">Send message</button></form></div></section>
+</main>
+<footer><div class="w"><span data-cfg="name"></span> · <span data-cfg="phone"></span> · <a href="#admin">Admin</a></div></footer>
+<div id="t" role="status"></div>
+
+<script>
+const CFG={name:"Your Business Name",phone:"+254 700 000 000",wa:"254700000000",email:"hello@yourbusiness.co.ke",addr:"Your street, your town",hours:"Mon to Sat, 8:00 to 19:00",fee:150,adminPin:"admin123",
+social:{Facebook:"https://facebook.com/",Instagram:"https://instagram.com/",TikTok:"https://tiktok.com/",X:"https://x.com/"}};
+CFG.feeTxt="KES "+CFG.fee;
+const SV=[{id:"type",n:"Typing",u:"page",p:50,i:"⌨️",d:"CVs, letters, assignments and reports typed fast."},
+{id:"bw",n:"Printing, black and white",u:"page",p:10,i:"🖨️",d:"Documents, notes and forms."},
+{id:"col",n:"Printing, colour",u:"page",p:30,i:"🎨",d:"Photos, posters and presentations."},
+{id:"ec",n:"eCitizen help",u:"application",p:300,i:"🪪",d:"Passport, licence, business registration and other eCitizen applications."},
+{id:"poster",n:"Design: poster or flyer",u:"design",p:1000,i:"🖌️",d:"Eye-catching posters, flyers and social media graphics."},
+{id:"logo",n:"Design: logo",u:"logo",p:3000,i:"✨",d:"A logo and brand colours for your business."}];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const mem={},ls={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):(mem[k]??d)}catch(e){return mem[k]??d}},set(k,v){mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const kes=n=>'KES '+n.toLocaleString('en-KE');
+const toast=m=>{const t=$('#t');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2800)};
+const sha=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))].map(x=>x.toString(16).padStart(2,'0')).join('');
+const me=()=>{const e=ls.get('sess',null);return ls.get('users',[]).find(u=>u.email===e)};
+let admin=false;const STS=['Received','In progress','Ready','Delivered','Cancelled'];
+const go=v=>{location.hash=v};
+function hdr(){const u=me(),a=$('#acct');a.textContent=u?'Hi, '+u.name.split(' ')[0]:'Log in';a.href=u?'#dash':'#account'}
+function route(){let v=location.hash.slice(1)||'home';if(!$('[data-v="'+v+'"]'))v='home';
+if(v==='dash'&&!me())return go('account');if(v==='account'&&me())return go('dash');
+$$('[data-v]').forEach(s=>s.hidden=s.dataset.v!==v);$$('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+v));
+if(v==='dash')rDash();if(v==='admin')rAdmin();hdr();scrollTo(0,0)}
+addEventListener('hashchange',route);
+
+/* config into page */
+$$('[data-cfg]').forEach(e=>e.textContent=CFG[e.dataset.cfg]);
+$('#cph').href='tel:'+CFG.phone.replace(/\s/g,'');$('#cwa').href='https://wa.me/'+CFG.wa;$('#cem').href='mailto:'+CFG.email;
+$('#soc').innerHTML=Object.entries(CFG.social).map(([k,v])=>`<a href="${esc(v)}" target="_blank" rel="noopener">${esc(k)}</a>`).join('');
+document.title=CFG.name+': typing, printing, eCitizen and design, delivered';
+
+/* services + calculators */
+$$('.svsel').forEach(e=>SV.forEach(s=>e.add(new Option(`${s.n} (${kes(s.p)} per ${s.u})`,s.id))));
+const calc=p=>{const s=SV.find(x=>x.id===$('#'+p+'svc').value),q=Math.max(1,Math.floor(+$('#'+p+'qty').value||1));return{s,q,t:s.p*q+($('#'+p+'del').checked?CFG.fee:0)}};
+['q','o'].forEach(p=>{const up=()=>{const c=calc(p);$('#'+p+'tot').textContent=kes(c.t);if(p==='q')$('#qu').textContent='(per '+c.s.u+')';else $('#addr').hidden=!$('#odel').checked};
+$$(`#${p}svc,#${p}qty,#${p}del`).forEach(e=>e.addEventListener('input',up));up()});
+const fire=id=>$('#'+id).dispatchEvent(new Event('input'));
+$('#cards').innerHTML=[['type','Typing','⌨️'],['bw','Printing','🖨️'],['ec','eCitizen help','🪪'],['poster','Graphic design','🖌️']].map(([id,n,i])=>{const s=SV.find(x=>x.id===id);
+const from=n==='Printing'?'from '+kes(10)+' per page':'from '+kes(s.p)+' per '+s.u;return`<div class="card svc" tabindex="0" role="button" data-pick="${id}"><b>${i}</b><h3>${n}</h3><p class="mut">${esc(n==='Printing'?'Black and white or colour, documents to posters.':s.d)}</p><small>${from}. Tap to get a price.</small></div>`}).join('');
+$$('[data-pick]').forEach(c=>{const f=()=>{$('#qsvc').value=c.dataset.pick;fire('qsvc');scrollTo({top:0,behavior:'smooth'});toast('Price updated above')};c.onclick=f;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}});
+$('#qgo').onclick=()=>{['svc','qty'].forEach(k=>$('#o'+k).value=$('#q'+k).value);$('#odel').checked=$('#qdel').checked;['osvc','oqty','odel'].forEach(fire);go('order')};
+
+/* auth */
+$('#tl').onclick=()=>{$('#lf').hidden=false;$('#sf').hidden=true;$('#tl').classList.remove('ghost');$('#ts').classList.add('ghost')};
+$('#ts').onclick=()=>{$('#lf').hidden=true;$('#sf').hidden=false;$('#ts').classList.remove('ghost');$('#tl').classList.add('ghost')};
+$('#sf').onsubmit=async e=>{e.preventDefault();const em=$('#se').value.trim().toLowerCase(),us=ls.get('users',[]);
+if(us.some(u=>u.email===em))return toast('That email already has an account. Log in instead.');
+us.push({name:$('#sn').value.trim(),email:em,phone:$('#sp').value.trim(),pw:await sha($('#sw').value),joined:Date.now()});ls.set('users',us);ls.set('sess',em);toast('Account created');e.target.reset();route()};
+$('#lf').onsubmit=async e=>{e.preventDefault();const em=$('#le').value.trim().toLowerCase(),h=await sha($('#lp').value);
+if(!ls.get('users',[]).some(u=>u.email===em&&u.pw===h))return toast('Email or password is incorrect.');ls.set('sess',em);toast('Welcome back');e.target.reset();go('dash');route()};
+$('#out').onclick=()=>{ls.set('sess',null);toast('Logged out');go('home');hdr()};
+
+/* orders */
+$('#of').onsubmit=e=>{e.preventDefault();const u=me();if(!u){toast('Create an account or log in to place your order.');return go('account')}
+const c=calc('o'),del=$('#odel').checked;if(del&&!$('#oadr').value.trim())return toast('Enter a delivery address.');
+const os=ls.get('orders',[]);os.unshift({id:'#'+String(Date.now()).slice(-6),email:u.email,name:u.name,phone:u.phone,svc:c.s.n,qty:c.q,det:$('#odet').value.trim(),del,addr:del?$('#oadr').value.trim():'',total:c.t,st:'Received',at:Date.now()});
+ls.set('orders',os);e.target.reset();fire('osvc');toast('Order sent. We will confirm shortly.');go('dash')};
+const fmt=t=>new Date(t).toLocaleDateString('en-KE',{day:'numeric',month:'short'});
+function rDash(){const u=me();if(!u)return;$('#hi').textContent='Hi, '+u.name.split(' ')[0];const os=ls.get('orders',[]).filter(o=>o.email===u.email);
+$('#mine').innerHTML=os.length?`<table><tr><th>Order</th><th>Service</th><th>Total</th><th>Status</th><th>Date</th></tr>${os.map(o=>`<tr><td>${o.id}</td><td>${esc(o.svc)} × ${o.qty}<br><small class="mut">${o.del?'Delivery':'Pick up'}</small></td><td>${kes(o.total)}</td><td><span class="st">${o.st}</span></td><td>${fmt(o.at)}</td></tr>`).join('')}</table>`:'<p class="mut">No orders yet. <a href="#order">Place your first order</a>.</p>'}
+
+/* admin */
+$('#pgo').onclick=()=>{if($('#pin').value===CFG.adminPin){admin=true;$('#pin').value='';rAdmin()}else toast('Wrong PIN.')};
+$('#alo').onclick=()=>{admin=false;rAdmin()};
+function rAdmin(){$('#gate').hidden=admin;$('#adm').hidden=!admin;if(!admin)return;const os=ls.get('orders',[]),ms=ls.get('msgs',[]);
+$('#stats').innerHTML=[['Orders',os.length],['Pending',os.filter(o=>o.st==='Received'||o.st==='In progress').length],['Revenue',kes(os.filter(o=>o.st!=='Cancelled').reduce((a,o)=>a+o.total,0))],['Customers',ls.get('users',[]).length]].map(([k,v])=>`<div class="card"><b>${v}</b><span class="mut">${k}</span></div>`).join('');
+$('#ords').innerHTML=os.length?`<table><tr><th>Order</th><th>Customer</th><th>Job</th><th>Total</th><th>Status</th></tr>${os.map(o=>`<tr><td>${o.id}<br><small class="mut">${fmt(o.at)}</small></td><td>${esc(o.name)}<br><small>${esc(o.phone)}</small></td><td>${esc(o.svc)} × ${o.qty}<br><small class="mut">${esc(o.det)}</small><br><small>${o.del?'Deliver to: '+esc(o.addr):'Pick up'}</small></td><td>${kes(o.total)}</td><td><select data-oid="${o.id}">${STS.map(s=>`<option${s===o.st?' selected':''}>${s}</option>`).join('')}</select></td></tr>`).join('')}</table>`:'<p class="mut">No orders yet.</p>';
+$('#msgs').innerHTML=ms.length?ms.map(m=>`<p><b>${esc(m.n)}</b> <span class="mut">(${esc(m.c)}, ${fmt(m.at)})</span><br>${esc(m.m)}</p>`).join(''):'<p class="mut">No messages yet.</p>'}
+$('#ords').onchange=e=>{const id=e.target.dataset.oid;if(!id)return;const os=ls.get('orders',[]);os.find(o=>o.id===id).st=e.target.value;ls.set('orders',os);rAdmin();toast('Order '+id+' set to '+e.target.value)};
+
+/* contact */
+$('#cf').onsubmit=e=>{e.preventDefault();const ms=ls.get('msgs',[]);ms.unshift({n:$('#cn').value,c:$('#cc').value,m:$('#cm').value,at:Date.now()});ls.set('msgs',ms);e.target.reset();toast('Message sent. We will get back to you.')};
+route();
+</script></body></html>
